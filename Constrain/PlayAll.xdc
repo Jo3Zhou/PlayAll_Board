@@ -32,19 +32,19 @@
 
 ##Buttons
 
-#set_property -dict { PACKAGE_PIN W15   IOSTANDARD LVCMOS33 } [get_ports { BTN0 }]; #IO_L21P_T3_DQS_33;Sche = X40
-#set_property -dict { PACKAGE_PIN Y15   IOSTANDARD LVCMOS33 } [get_ports { BTN1 }]; #IO_L21N_T3_DQS_33;Sche = X42
-#set_property -dict { PACKAGE_PIN Y14   IOSTANDARD LVCMOS33 } [get_ports { BTN2 }]; #IO_L22P_T3_33;Sche = X44
-#set_property -dict { PACKAGE_PIN AA14  IOSTANDARD LVCMOS33 } [get_ports { BTN3 }]; #IO_L22N_T3_33;Sche = X46
-#set_property -dict { PACKAGE_PIN Y13   IOSTANDARD LVCMOS33 } [get_ports { BTN4 }]; #IO_L23P_T3_33;Sche = X48
+#set_property -dict { PACKAGE_PIN W15   IOSTANDARD LVCMOS33 } [get_ports { BTN_R }]; #IO_L21P_T3_DQS_33;Sche = X40
+#set_property -dict { PACKAGE_PIN Y15   IOSTANDARD LVCMOS33 } [get_ports { BTN_U }]; #IO_L21N_T3_DQS_33;Sche = X42
+#set_property -dict { PACKAGE_PIN Y14   IOSTANDARD LVCMOS33 } [get_ports { BTN_M }]; #IO_L22P_T3_33;Sche = X44
+#set_property -dict { PACKAGE_PIN AA14  IOSTANDARD LVCMOS33 } [get_ports { BTN_L }]; #IO_L22N_T3_33;Sche = X46
+#set_property -dict { PACKAGE_PIN Y13   IOSTANDARD LVCMOS33 } [get_ports { BTN_D }]; #IO_L23P_T3_33;Sche = X48
 
 ##LEDs
-
-#set_property -dict { PACKAGE_PIN P21   IOSTANDARD LVCMOS33 } [get_ports { LD0 }]; #IO_L18N_T2_34;Sche = Y8
-#set_property -dict { PACKAGE_PIN P20   IOSTANDARD LVCMOS33 } [get_ports { LD1 }]; #IO_L18P_T2_34;Sche = Y10
-#set_property -dict { PACKAGE_PIN R21   IOSTANDARD LVCMOS33 } [get_ports { LD2 }]; #IO_L17N_T2_34;Sche = Y12
-#set_property -dict { PACKAGE_PIN R20   IOSTANDARD LVCMOS33 } [get_ports { LD3 }]; #IO_L17P_T2_34;Sche = Y14
-#set_property -dict { PACKAGE_PIN P22   IOSTANDARD LVCMOS33 } [get_ports { LD4 }]; #IO_L16N_T2_34;Sche = Y16
+##From up to down
+#set_property -dict { PACKAGE_PIN P20   IOSTANDARD LVCMOS33 } [get_ports { LD0 }]; #IO_L18P_T2_34;Sche = Y10
+#set_property -dict { PACKAGE_PIN P22   IOSTANDARD LVCMOS33 } [get_ports { LD1 }]; #IO_L16N_T2_34;Sche = Y16
+#set_property -dict { PACKAGE_PIN R20   IOSTANDARD LVCMOS33 } [get_ports { LD2 }]; #IO_L17P_T2_34;Sche = Y14
+#set_property -dict { PACKAGE_PIN P21   IOSTANDARD LVCMOS33 } [get_ports { LD3 }]; #IO_L18N_T2_34;Sche = Y8
+#set_property -dict { PACKAGE_PIN R21   IOSTANDARD LVCMOS33 } [get_ports { LD4 }]; #IO_L17N_T2_34;Sche = Y12
 
 ##Rotary Encoder
 
