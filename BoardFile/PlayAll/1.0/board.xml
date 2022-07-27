@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- General board description: vendor, name, etc. -->
+<board schema_version="2.1" vendor="PlayAll" name="PlayAll" display_name="PlayAll Development Board" url="https://github.com/Jo3Zhou" preset_file="preset.xml">
+
+	<!-- Image of the board -->
+	<images>
+		<image name="PlayAll.jpg" display_name="PlayAll Development Board" sub_type="board">
+			<description>PlayAll Development Board</description>
+		</image>
+	</images>
+
+	<!-- Board PCB revision -->
+	<compatible_board_revisions>
+		<revision id="1">1.0</revision>
+	</compatible_board_revisions>
+
+	<!-- Board file revision -->
+  	<file_version>1.0</file_version>
+
+	<!-- Board description -->
+  	<description>PlayAll Development Board is based on KRM SoM.</description>
+
+	<!-- Information about board components: fpga part, interfaces, etc. -->
+	<components>
+
+		<!-- FPGA part -->
+		<component name="part0" display_name="PlayAll" type="fpga" part_name="xc7z020clg484-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="www.xilinx.com">
+			<description>FPGA part on the board</description>
+
+			<!-- Associated FPGA interfaces and IP cores -->
+			<interfaces>
+
+				<!-- Zynq 7000 processing system -->
+		    	<interface mode="master" name="ps7_fixedio" type="xilinx.com:display_processing_system7:fixedio_rtl:1.0" of_component="ps7_fixedio" preset_proc="ps7_preset">
+		      		<preferred_ips>
+		        		<preferred_ip vendor="xilinx.com" library="ip" name="processing_system7" order="0"/>
+		      		</preferred_ips>
+		    	</interface>
+
+		  	</interfaces>
+    	</component>
+
+    	<!-- Zynq 7000 processing system -->
+    	<component name="ps7_fixedio" display_name="PS7 fixed IO" type="chip" sub_type="fixed_io" major_group=""/>
+
+	</components>
+
+</board>
